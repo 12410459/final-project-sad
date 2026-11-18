@@ -1,0 +1,60 @@
+{
+  "name": "Sistem Informasi Manajemen Bimbel Cerdas",
+  "diagrams": [
+    {
+      "id": "d80ea18f",
+      "type": "usecase",
+      "title": "Use Case – Sistem Informasi Bimbel Cerdas",
+      "nodes": [
+        { "id": "sys", "kind": "system", "label": "Sistem Informasi Manajemen Bimbel Cerdas", "x": 310, "y": 35, "w": 720, "h": 1050 },
+        { "id": "ortu", "kind": "actor", "label": "Orang Tua", "x": 70, "y": 170, "w": 95, "h": 92 },
+        { "id": "admin", "kind": "actor", "label": "Admin", "x": 70, "y": 420, "w": 95, "h": 92 },
+        { "id": "owner", "kind": "actor", "label": "Pemilik", "x": 70, "y": 680, "w": 95, "h": 92 },
+        { "id": "tutor", "kind": "actor", "label": "Tutor", "x": 1120, "y": 420, "w": 95, "h": 92 },
+        { "id": "uc01", "kind": "usecase", "label": "Mengajukan Pendaftaran Anak", "x": 360, "y": 90, "w": 255, "h": 48 },
+        { "id": "uc02", "kind": "usecase", "label": "Melihat Informasi Absensi Anak", "x": 360, "y": 155, "w": 255, "h": 48 },
+        { "id": "uc03", "kind": "usecase", "label": "Melihat Informasi Tagihan SPP", "x": 360, "y": 220, "w": 255, "h": 48 },
+        { "id": "uc04", "kind": "usecase", "label": "Mencatat Data Pendaftaran", "x": 360, "y": 310, "w": 255, "h": 48 },
+        { "id": "uc05", "kind": "usecase", "label": "Mencatat Pembayaran dan Kuitansi", "x": 360, "y": 375, "w": 255, "h": 48 },
+        { "id": "uc06", "kind": "usecase", "label": "Melihat Tagihan Belum Lunas", "x": 360, "y": 440, "w": 255, "h": 48 },
+        { "id": "uc07", "kind": "usecase", "label": "Menindaklanjuti Ketidakhadiran", "x": 360, "y": 505, "w": 255, "h": 48 },
+        { "id": "uc08", "kind": "usecase", "label": "Mencatat Hasil Telepon Orang Tua", "x": 360, "y": 570, "w": 255, "h": 48 },
+        { "id": "uc09", "kind": "usecase", "label": "Mengelola Penempatan dan Daftar Tunggu", "x": 700, "y": 90, "w": 255, "h": 48 },
+        { "id": "uc10", "kind": "usecase", "label": "Mengelola Kelas, Jadwal, dan Tutor", "x": 700, "y": 165, "w": 255, "h": 48 },
+        { "id": "uc11", "kind": "usecase", "label": "Menghitung Honor Tutor Bulanan", "x": 700, "y": 240, "w": 255, "h": 48 },
+        { "id": "uc12", "kind": "usecase", "label": "Melihat Jadwal Kelas", "x": 700, "y": 375, "w": 255, "h": 48 },
+        { "id": "uc13", "kind": "usecase", "label": "Mencatat Sesi dan Absensi", "x": 700, "y": 440, "w": 255, "h": 48 },
+        { "id": "uc_s01", "kind": "usecase", "label": "Orang Tua Mendaftarkan Anak", "x": 700, "y": 545, "w": 255, "h": 52 },
+        { "id": "uc_s02", "kind": "usecase", "label": "Orang Tua Mengetahui Kehadiran dan Tagihan Anak", "x": 700, "y": 623, "w": 285, "h": 52 },
+        { "id": "uc_s03", "kind": "usecase", "label": "Admin Mencatat Pembayaran dan Menindaklanjuti Absensi", "x": 700, "y": 701, "w": 285, "h": 52 },
+        { "id": "uc_s04", "kind": "usecase", "label": "Pemilik Mengatur Kelas dan Jadwal", "x": 700, "y": 779, "w": 255, "h": 52 },
+        { "id": "uc_s05", "kind": "usecase", "label": "Pemilik Menghitung Honor Bulanan", "x": 700, "y": 857, "w": 255, "h": 52 },
+        { "id": "uc_s06", "kind": "usecase", "label": "Tutor Mencatat Absensi Sesi", "x": 700, "y": 935, "w": 255, "h": 52 }
+      ],
+      "edges": [
+        { "id": "l11303eb", "kind": "association", "from": "ortu", "to": "uc01" },
+        { "id": "l7103577", "kind": "association", "from": "ortu", "to": "uc02" },
+        { "id": "l6920abc", "kind": "association", "from": "ortu", "to": "uc03" },
+        { "id": "l4df9087", "kind": "association", "from": "admin", "to": "uc04" },
+        { "id": "le065985", "kind": "association", "from": "admin", "to": "uc05" },
+        { "id": "l56adf00", "kind": "association", "from": "admin", "to": "uc06" },
+        { "id": "l1950d9c", "kind": "association", "from": "admin", "to": "uc07" },
+        { "id": "l897b835", "kind": "association", "from": "admin", "to": "uc08" },
+        { "id": "l0cbdb86", "kind": "association", "from": "owner", "to": "uc09" },
+        { "id": "l93acd27", "kind": "association", "from": "owner", "to": "uc10" },
+        { "id": "ld79d78b", "kind": "association", "from": "owner", "to": "uc11" },
+        { "id": "l883dc2a", "kind": "association", "from": "tutor", "to": "uc12" },
+        { "id": "l947479c", "kind": "association", "from": "tutor", "to": "uc13" },
+        { "id": "link_uc_s01_ortu", "kind": "association", "from": "ortu", "to": "uc_s01" },
+        { "id": "link_uc_s01_admin", "kind": "association", "from": "admin", "to": "uc_s01" },
+        { "id": "link_uc_s01_owner", "kind": "association", "from": "owner", "to": "uc_s01" },
+        { "id": "link_uc_s02_ortu", "kind": "association", "from": "ortu", "to": "uc_s02" },
+        { "id": "link_uc_s02_admin", "kind": "association", "from": "admin", "to": "uc_s02" },
+        { "id": "link_uc_s03_admin", "kind": "association", "from": "admin", "to": "uc_s03" },
+        { "id": "link_uc_s04_owner", "kind": "association", "from": "owner", "to": "uc_s04" },
+        { "id": "link_uc_s05_owner", "kind": "association", "from": "owner", "to": "uc_s05" },
+        { "id": "link_uc_s06_tutor", "kind": "association", "from": "tutor", "to": "uc_s06" }
+      ]
+    }
+  ]
+}
