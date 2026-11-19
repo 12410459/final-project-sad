@@ -147,7 +147,7 @@ export const bimbelRepository = {
 
     if (getIsPostgresConnected()) {
       try {
-        const created = await prisma.$transaction(async (tx) => {
+        const created = await prisma.$transaction(async (tx: any) => {
           const ortu = await tx.orangTua.create({
             data: {
               id_orang_tua,
@@ -199,9 +199,9 @@ export const bimbelRepository = {
             jadwal: true
           }
         });
-        return list.map(k => {
-          const placed = k.penempatan.filter(p => p.status_penempatan === "DITEMPATKAN");
-          const waiting = k.penempatan.filter(p => p.status_penempatan === "DAFTAR_TUNGGU");
+        return list.map((k: any) => {
+          const placed = k.penempatan.filter((p: any) => p.status_penempatan === "DITEMPATKAN");
+          const waiting = k.penempatan.filter((p: any) => p.status_penempatan === "DAFTAR_TUNGGU");
           return {
             ...k,
             penempatan: placed,
