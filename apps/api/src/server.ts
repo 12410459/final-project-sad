@@ -14,7 +14,10 @@ const PORT = process.env.PORT || 4000;
 
 // Middleware global
 app.use(cors({
-  origin: "*",
+  origin: [
+    "https://final-project-i21lukkmo-el-classico.vercel.app",
+    "http://localhost:5173"
+  ],
   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
   allowedHeaders: ["Content-Type", "Authorization", "X-User-Role", "X-User-Id"]
 }));
